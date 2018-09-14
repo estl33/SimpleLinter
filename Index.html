@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+   <link rel="shortcut icon" href="https://banner2.kisspng.com/20180407/tde/kisspng-fountain-pen-symbol-paper-computer-icons-write-5ac88c704a1032.7433087215230925923034.jpg"/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Simple Linter Program</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+	  body {
+		font-family: 'Open Sans', sans-serif;
+		background: url{https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0011/0094/rrPattern-Grid_shop_preview.png};
+	  }
+	  
+      h1 {
+        font-size: 1.5em
+      }
+      input, textarea {
+        min-width: 500px;
+        min-height: 150px;
+		margin-bottom: 1em;
+		font-size: 1.25em;
+        border: 1px solid grey;
+		text-overflow: ellipsis;
+      }
+	  button {
+		background-color: #bbf2f7;
+		min-width: 500px;
+        min-height: 50px;
+        border: 1px solid silver;
+	  }
+	  
+      label, input, textarea, button {
+        display: block;
+      }
+	  .output {
+		background-color: #b2ddff;
+		position: relative;
+		width: 500px;
+		height: 200px;
+		margin-top: 1em;
+		border: 2px solid silver;
+	   }
+    </style>
+  </head>
+  <body>
+    <h1>Simple Linter Program</h1>
+    <label for="input1">Paragraph 1</label>
+    <!--<input placeholder="Input paragraph 1" id="num1">-->
+	<textarea id="input1" placeholder="Input paragraph here..." name="text" rows="10" cols="10" wrap="soft"></textarea>
+    <label for="input2">Unwanted Words</label>
+	<textarea id="input2" placeholder="Input unwanted words here..." name="text" rows="10" cols="10" wrap="soft"></textarea>
+    <!--<input placeholder="Input unwanted words" id="num2">-->
+    <button>Analyze</button>
+	<div class='output'>
+		<p id="wordCount"></p>
+		<p id="sentenceCount"></p>
+		<p id="UnwantedWordCount"></p>
+		<p id="MostCommonWord"></p>
+	</div>
+    <script src="Linter.js"></script>
+  </body>
+</html>
